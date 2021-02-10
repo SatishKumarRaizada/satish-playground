@@ -39,7 +39,7 @@ class _FormExampleState extends State<FormExample> {
                   print(txt);
                 },
                 onEditCompletion: () {
-                  //On done keyboard press
+                  //On done keyboard press move focus to next text field
                   node.nextFocus();
                 },
               ),
@@ -66,6 +66,7 @@ class _FormExampleState extends State<FormExample> {
                   print(txt);
                 },
                 onEditCompletion: () {
+                  //On done keyboard press close focus and make the method call
                   node.nextFocus();
                   print('Make API calls');
                 },
